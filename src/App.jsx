@@ -4,7 +4,7 @@ import Footer from "./components/common/Footer";
 import MainPage from "./pages/index";
 import useSmoothScroll from "./assets/js/useSmoothScroll";
 
-const isProduction = import.meta.env.MODE === "production";
+const isProduction = import.meta.env.VITE_APP_MODE === "production";
 const basename = isProduction ? "/portfolio25" : "/";
 console.log(import.meta.env.MODE);
 const router = createBrowserRouter(
