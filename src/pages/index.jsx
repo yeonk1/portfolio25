@@ -5,7 +5,6 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
 const MainPage = () => {
     useEffect(() => {
-        document.title = 'KANG JI YEON || PORTFOLIO'
         const windowH = window.innerHeight;
 
         const handleScroll = () => {
