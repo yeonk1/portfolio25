@@ -7,7 +7,7 @@ import useSmoothScroll from "./assets/js/useSmoothScroll";
 // Vite에서 사용하는 환경 변수
 const isProduction = process.env.NODE_ENV === "production";
 const basename = isProduction ? "/portfolio25" : "/";
-
+console.log(process.env.NODE_ENV)
 const router = createBrowserRouter(
     [
         {
