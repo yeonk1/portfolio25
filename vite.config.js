@@ -1,7 +1,7 @@
 import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
 import svgr from 'vite-plugin-svgr';
-import HtmlPlugin from 'vite-plugin-html';
+const HtmlPlugin = require('vite-plugin-html');
 
 
 export default defineConfig({
