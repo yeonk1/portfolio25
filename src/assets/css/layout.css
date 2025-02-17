@@ -1,0 +1,68 @@
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-height: 65px;
+    width: 100%;
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 30px;
+    color: coral;
+}
+
+header h1 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    position: absolute;
+    top: 50%;
+    left: 30px;
+    transform: translateY(-50%);
+    animation: logo-rotate 3s 1s infinite;
+
+}
+header h1 > a {
+    color: coral;
+
+}
+@keyframes logo-rotate {
+    0% {
+        transform: translateY(-50%) rotateX(0deg)
+    }
+    100% {
+        transform: translateY(-50%) rotateX(360deg);
+    }
+}
+header .gnb > ul{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+header .gnb > ul > li {
+    padding: 3px 8px;
+    border-radius: 10px;
+    border: 1px solid coral;
+}
+header .gnb > ul > li > a {
+    color: coral;
+}
+footer {
+    padding: 30px 0;
+    text-align: center;
+
+}
+
+@media screen and (max-width: 500px) {
+    header {
+        padding: 0 20px;
+    }
+    header h1 {
+        top: 30px;
+        left: 20px;
+        transform: none;
+    }
+    .gnb {
+        margin-top: 60px;
+    }
+}
