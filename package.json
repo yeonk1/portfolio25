@@ -1,5 +1,4 @@
 {
-  "homepage": "https://yeonk1.github.io/portfolio25",
   "name": "portfolio-new",
   "private": true,
   "version": "0.0.0",
@@ -10,7 +9,8 @@
     "lint": "eslint .",
     "preview": "vite preview",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist"
+    "deploy": "gh-pages -d dist",
+    "homepage": "https://yeonk1.github.io/portfolio25"
   },
   "dependencies": {
     "@studio-freight/lenis": "^1.0.42",
