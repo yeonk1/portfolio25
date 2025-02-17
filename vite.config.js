@@ -1,23 +1,14 @@
 import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
 import svgr from 'vite-plugin-svgr';
-const HtmlPlugin = require('vite-plugin-html');
 
 
 export default defineConfig({
-  plugins: [react(),
-    svgr(),
-    HtmlPlugin({
-      inject: {
-        injectFavicon: '/portfolio25/favicon.png', // 파비콘 경로 수정
-      },
-    }),],
+  plugins: [react(), svgr(),],
   base: '/portfolio25/',
   build: {
     rollupOptions: {
-      input: {
-        main: 'index.html',
-      },
+      input: 'index.html', // 빌드할 HTML 파일 명시
     },
   },
 });
