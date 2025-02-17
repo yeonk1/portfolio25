@@ -8,8 +8,4 @@ const basename = isProduction ? "/portfolio25" : "/";
 export default defineConfig({
   plugins: [react(), svgr()],
   base: basename,
-  define: {
-    "process.env" : process.env,
-  }
-
 });
