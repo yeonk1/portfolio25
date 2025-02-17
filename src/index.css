@@ -17,32 +17,32 @@
 
 @font-face {
   font-family: "boogy";
-  src: url('src/assets/font/BoogyBrutTEST-Regular.otf') format("opentype");
+  src: url('public/assets/font/BoogyBrutTEST-Regular.otf') format("opentype");
   font-weight: 400;
 }
 @font-face {
   font-family: "boogy";
-  src: url('src/assets/font/BoogyBrutTEST-Bold.otf') format("opentype");
+  src: url('public/assets/font/BoogyBrutTEST-Bold.otf') format("opentype");
   font-weight: 600;
 }
 @font-face {
   font-family: "Noto Sans KR";
-  src: url('src/assets/font/NotoSansKR-Light.ttf') format("opentype");
+  src: url('public/assets/font/NotoSansKR-Light.ttf') format("opentype");
   font-weight: 300;
 }
 @font-face {
   font-family: "Noto Sans KR";
-  src: url('src/assets/font/NotoSansKR-Regular.ttf') format("opentype");
+  src: url('public/assets/font/NotoSansKR-Regular.ttf') format("opentype");
   font-weight: 400;
 }
 @font-face {
   font-family: "Noto Sans KR";
-  src: url('src/assets/font/NotoSansKR-Regular.ttf') format("opentype");
+  src: url('public/assets/font/NotoSansKR-Regular.ttf') format("opentype");
   font-weight: 600;
 }
 @font-face {
   font-family: "suit";
-  src: url('src/assets/font/SUIT-ExtraBold.otf') format("opentype");
+  src: url('public/assets/font/SUIT-ExtraBold.otf') format("opentype");
   font-weight: 600;
 }
 
