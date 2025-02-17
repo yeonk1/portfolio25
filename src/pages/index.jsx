@@ -362,7 +362,7 @@ const MainPage = () => {
                 <h2>About</h2>
                 <div className="wrap">
                     <div className="img-area">
-                        <img src={'../assets/images/works/profile.png'} alt=""/>
+                        <img src={'assets/images/works/profile.png'} alt=""/>
                     </div>
                     <div className="keyword-list-wrap">
                         <div className="balloon">
