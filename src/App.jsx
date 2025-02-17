@@ -4,16 +4,12 @@ import Footer from "./components/common/Footer";
 import MainPage from "./pages/index";
 import useSmoothScroll from "./assets/js/useSmoothScroll";
 
-// 환경 변수에서 mode 확인
-const isProduction = import.meta.env.VITE_APP_MODE === "production";
-const basename = isProduction ? "/portfolio25" : "/";
-console.log("Current Mode:", import.meta.env.VITE_APP_MODE);
-
 const router = createBrowserRouter([
     {
-        path: basename, // 🔥 여기에 `basename` 적용
+        path: "/portfolio25",
         element: (
             <>
+
                 <Header />
                 <MainPage />
                 <Footer />
@@ -28,7 +24,7 @@ const router = createBrowserRouter([
 
 const App = () => {
     useSmoothScroll();
-    return <RouterProvider router={router} />;
+    return <RouterProvider router={router} basename="/portfolio25" />;
 };
 
 export default App;
