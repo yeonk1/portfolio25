@@ -362,10 +362,10 @@ const MainPage = () => {
                 <h2>About</h2>
                 <div className="wrap">
                     <div className="img-area">
-                        <img src={'assets/images/works/profile.png'} alt=""/>
+                        <img src="/assets/images/works/profile.png" alt="Profile"/>
                     </div>
                     <div className="keyword-list-wrap">
-                        <div className="balloon">
+                    <div className="balloon">
                             <p>안녕하세요?<br/>
                                 저는 UI developer 강지연입니다.<br/>
                                 저를 소개하자면
