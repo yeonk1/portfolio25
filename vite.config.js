@@ -5,5 +5,7 @@ import svgr from 'vite-plugin-svgr';
 
 export default defineConfig({
   plugins: [react(), svgr(),],
-  base: '/portfolio25/',
+// vite.config.js
+  base: import.meta.env.MODE === "production" ? "/portfolio25/" : "/",
+
 });
