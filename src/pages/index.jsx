@@ -362,23 +362,24 @@ const MainPage = () => {
                 <h2>About</h2>
                 <div className="wrap">
                     <div className="img-area">
-                        <img src="/assets/images/works/profile.png" alt="Profile"/>
+                        <img src={`${import.meta.env.BASE_URL}assets/images/works/profile.png`} alt="Profile"/>
                     </div>
                     <div className="keyword-list-wrap">
-                    <div className="balloon">
+                        <div className="balloon">
                             <p>안녕하세요?<br/>
                                 저는 UI developer 강지연입니다.<br/>
                                 저를 소개하자면
-                                    {keywords.map((keyword, index) => (
-                                        <span className="keyword" key={index}>&#34;{keyword}&#34;</span>))}
+                                {keywords.map((keyword, index) => (
+                                    <span className="keyword" key={index}>&#34;{keyword}&#34;</span>))}
                                 이란 키워드로 설명드릴 수 있을 것 같습니다.<br/>
                                 제가 프로젝트에서 경험해본 SKILL은
-                                    {skills.map((skill, index) => (
-                                        <span className={`keyword skill ${skill.type === 1 ? 'dev' : skill.type === 2 ? 'comm' : 'design'}`}
-                                            key={index}>
+                                {skills.map((skill, index) => (
+                                    <span
+                                        className={`keyword skill ${skill.type === 1 ? 'dev' : skill.type === 2 ? 'comm' : 'design'}`}
+                                        key={index}>
                                             {skill.name}
                                         </span>
-                                    ))}
+                                ))}
                                 등이 있습니다.
                             </p>
 
@@ -398,7 +399,7 @@ const MainPage = () => {
             <div className="cursor">
                 {projects.map((object, i) => (
                     <div className="img-area" key={i}>
-                        <img src={`/assets/images/works/${object.image}.jpg`} alt=""/>
+                        <img src={`${import.meta.env.BASE_URL}assets/images/works/${object.image}.jpg`} alt=""/>
                     </div>
                 ))}
                 {/* 리스트 hover 시 커서에 보이는 효과 삽입 */}
