@@ -24,7 +24,7 @@ const router = createBrowserRouter([
 
 const App = () => {
     useSmoothScroll();
-    return <RouterProvider router={router} />;
+    return <RouterProvider router={router} basename="/portfolio25" />;
 };
 
 export default App;
