@@ -4,5 +4,5 @@ import svgr from 'vite-plugin-svgr';
 
 export default defineConfig({
   plugins: [react(), svgr()],
-  base: process.env.NODE_ENV === "production" ? "/portfolio25/" : "/",
+  base: import.meta.env.MODE === "production" ? "/portfolio25/" : "/",
 });
