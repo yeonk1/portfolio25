@@ -398,7 +398,7 @@ const MainPage = () => {
             <div className="cursor">
                 {projects.map((object, i) => (
                     <div className="img-area" key={i}>
-                        <img src={`assets/images/works/${object.image}.jpg`} alt=""/>
+                        <img src={`/assets/images/works/${object.image}.jpg`} alt=""/>
                     </div>
                 ))}
                 {/* 리스트 hover 시 커서에 보이는 효과 삽입 */}
