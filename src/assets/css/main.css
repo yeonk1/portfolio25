@@ -157,7 +157,7 @@ section{
     left: 30px;
     bottom: 10px;
     color: coral;
-    font-size: clamp(4rem, 12vw, 15rem);
+    font-size: clamp(2rem, 12vw, 15rem);
     transition: .5s;
 }
 .main-section .sub-title {
