@@ -410,5 +410,8 @@ body.scroll .main-section + section {
     .project-card {
         width: 100%;
     }
+    #about .wrap {
+        padding: 0;
+    }
 }
 
