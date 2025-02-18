@@ -143,8 +143,6 @@ const MainPage = () => {
                 scrollTrigger: {
                     trigger: ".project-list",
                     start: "top 90%",
-                    end: "bottom 50%",
-                    scrub: true,
                 },
             }
         );
