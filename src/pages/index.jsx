@@ -252,6 +252,7 @@ const MainPage = () => {
     const projects = [
         {
             title: "Samsung MONIMO",
+            type: "어플리케이션 운영 및 신규 파트 구축",
             skill: ["VUE", "NUXT", "SCSS", "JAVASCRIPT", "LOTTIE"],
             contribution: 100,
             date: "2024.01.01 ~ 2024.07.31",
@@ -261,6 +262,7 @@ const MainPage = () => {
         },
         {
             title: "LG KOOROO",
+            type: "구축",
             skill: ["VUE", "NUXT", "CSS", "GSAP", "JAVASCRIPT", "FULLPAGE"],
             contribution: 100,
             date: "2023.10 ~ 2023.11",
@@ -270,6 +272,7 @@ const MainPage = () => {
         },
         {
             title: "동아일보",
+            type: "전체 리뉴얼",
             skill: ["HTML", "CSS", "JAVASCRIPT"],
             contribution: 100,
             date: "2023.09 ~ 2023.10",
@@ -279,6 +282,7 @@ const MainPage = () => {
         },
         {
             title: "Hanwha Science Challenge",
+            type: "전체 리뉴얼",
             skill: ["HTML", "CSS", "JAVASCRIPT"],
             contribution: 100,
             date: "2022.12 ~ 2023.01",
@@ -288,6 +292,7 @@ const MainPage = () => {
         },
         {
             title: "Hanwha System",
+            type: "전체 리뉴얼",
             skill: ["HTML", "CSS", "JAVASCRIPT"],
             contribution: 40,
             date: "2022.07",
@@ -297,6 +302,7 @@ const MainPage = () => {
         },
         {
             title: "Hanwha Connect",
+            type: "전체 리뉴얼",
             skill: ["HTML", "CSS", "JAVASCRIPT"],
             contribution: 40,
             date: "2022.07",
@@ -306,6 +312,7 @@ const MainPage = () => {
         },
         {
             title: "매일경제",
+            type: "전체 리뉴얼",
             skill: ["HTML", "CSS", "JAVASCRIPT"],
             contribution: 100,
             date: "2022.02",
@@ -342,6 +349,7 @@ const MainPage = () => {
                     {projects.map((project, index) => (
                         <li key={index} className="project-card">
                             <a href={project.link} target="_blank">
+                                <p className="type">{project.type}</p>
                                 <h3 className="title">{project.title}</h3>
                                 <p className="date">{project.date}</p>
                                 <div className="skills">
