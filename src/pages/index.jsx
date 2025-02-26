@@ -118,7 +118,7 @@ const MainPage = () => {
                 duration: 1,
                 ease: "power4.out",
                 scrollTrigger: {
-                    trigger: "#about",
+                    trigger: ".balloon",
                     start: "top 90%",
                 },
             }
