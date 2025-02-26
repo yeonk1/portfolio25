@@ -86,22 +86,7 @@ const MainPage = () => {
             return (direction = 1) => (min + delta * Math.random()) * direction;
         }
 
-        gsap.fromTo(
-            ".letter",
-            {
-                filter: "blur(10px)", // 시작 블러
-                opacity: 0,
-                y: 50,
-            },
-            {
-                filter: "blur(0px)", // 종료 블러
-                y: 0,
-                opacity: 1,
-                stagger: 0.1, // 순차적 애니메이션 지연 시간
-                duration: 0.8,
-                ease: "power4.out",
-            }
-        );
+
 
         gsap.fromTo(
             ".balloon",
@@ -118,7 +103,27 @@ const MainPage = () => {
                 duration: 1,
                 ease: "power4.out",
                 scrollTrigger: {
-                    trigger: ".balloon",
+                    trigger: ".keyword-list-wrap",
+                    start: "top 90%",
+                },
+            }
+        );
+        gsap.fromTo(
+            ".keyword",
+            {
+                filter: "blur(10px)",
+                opacity: 0,
+                y: 50,
+            },
+            {
+                filter: "blur(0px)",
+                y: 0,
+                opacity: 1,
+                stagger: 0.1,
+                duration: 0.8,
+                ease: "power4.out",
+                scrollTrigger: {
+                    trigger: ".keyword-list-wrap",
                     start: "top 90%",
                 },
             }
