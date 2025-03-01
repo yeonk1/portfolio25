@@ -10,14 +10,13 @@ const MainPage = () => {
         const handleScroll = () => {
             const scrollTop = Math.floor(window.scrollY);
             if (scrollTop > windowH / 3) {
-                document.body.classList.add('scroll');
+                document.querySelector('.fix-bg').classList.add('scroll');
             } else {
-                document.body.classList.remove('scroll');
+                document.querySelector('.fix-bg').classList.remove('scroll');
             }
         };
 
         document.addEventListener('scroll', handleScroll);
-        document.body.style.transition = ".5s"
 
         gsap.registerPlugin(ScrollTrigger);
 
@@ -276,7 +275,7 @@ const MainPage = () => {
             skill: ["HTML", "CSS", "JAVASCRIPT"],
             contribution: 100,
             date: "2023.09 ~ 2023.10",
-            desc: "까다로운 레이아웃을 접근성으로 구현하기 위해 많은 공수가 들어갔던 프로젝트입니다. 리스트 type에 따라 추가 class로 관리될 수 있도록 하였습니다.",
+            desc: "메인페이지와 각 카테고리별 메인 페이지를 리뉴얼 작업했습니다. 언론사 페이지 특성상 다양한 레이아웃의 디자인으로 진행됐습니다. 추후 유지보수성의 효율을 높이기 위해 레이아웃들을 case별로 구분하여 class를 부여해 작업했습니다.",
             link:'https://www.donga.com',
             image: 'donga-01'
         },
@@ -286,7 +285,7 @@ const MainPage = () => {
             skill: ["HTML", "CSS", "JAVASCRIPT"],
             contribution: 100,
             date: "2022.12 ~ 2023.01",
-            desc: "hanwha에서 주최하는 고등학교 과학 공모전 홈페이지로, 전체 리뉴얼 퍼블리싱 진행했습니다.",
+            desc: "hanwha에서 주최하는 고등학교 과학 공모전 홈페이지로, 전체 리뉴얼 퍼블리싱 진행했습니다. 스크롤 인터랙션 및 반응형 작업에 신경썼던 프로젝트입니다.",
             link:'https://www.sciencechallenge.or.kr',
             image: 'hanwhasc-01'
         },

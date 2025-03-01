@@ -1,6 +1,4 @@
 body {
-    background: khaki;
-    color: #000;
     cursor: none;
 }
 a {
@@ -84,7 +82,18 @@ section{
     right: 0;
     bottom: 0;
     z-index: -1;
+    background: khaki;
+    color: #000;
+    transition: .5s;
 }
+
+.fix-bg.scroll {
+    background: #f2eacb;
+}
+body:has(.fix-bg.scroll) section {
+    filter: blur(0px);
+}
+
 .fix-bg .fix-object {
     width: clamp(3vw, 30rem, 30vw);
     height: clamp(4vw, 50rem, 40vw);
@@ -383,17 +392,7 @@ progress::-webkit-progress-value {
     margin-top: 10px;
 }
 
-/*scroll evt*/
-body.scroll {
-    background: #f2eacb;
-}
 
-body.scroll .main-section .title {
-    color: #000;
-}
-body.scroll .main-section + section {
-   filter: blur(0px);
-}
 
 @media screen and (max-width: 1024px) {
     .cursor {
