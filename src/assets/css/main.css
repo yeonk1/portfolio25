@@ -90,6 +90,7 @@ section{
 .fix-bg.scroll {
     background: #f2eacb;
 }
+
 body:has(.fix-bg.scroll) section {
     filter: blur(0px);
 }
@@ -168,6 +169,9 @@ body:has(.fix-bg.scroll) section {
     color: coral;
     font-size: clamp(2rem, 12vw, 15rem);
     transition: .5s;
+}
+body:has(.fix-bg.scroll) .main-section .title {
+    color: #000;
 }
 .main-section .sub-title {
     display: inline-block;
