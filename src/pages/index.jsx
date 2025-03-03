@@ -122,7 +122,7 @@ const MainPage = () => {
                     end: "+=500",
                     pin: true,
                     scrub: 1,
-                    markers:true,
+                    // markers:true,
                 },
             }
         );
