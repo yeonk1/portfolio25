@@ -1,6 +1,7 @@
 body {
     cursor: none;
-    overflow: hidden;
+    overflow-x: hidden;
+    overflow-y: auto;
 }
 a {
     cursor: none;
@@ -131,6 +132,7 @@ body:has(.fix-bg.scroll) section {
     position: fixed;
     left: 0;
     top: 0;
+    overflow: hidden;
 }
 
 .noise:after {
