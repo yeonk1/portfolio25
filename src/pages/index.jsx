@@ -238,7 +238,7 @@ const MainPage = () => {
     const text = "UI Developer".split('');
 
     const keywords = [
-         '꼼꼼한', '열정적인', '협동 좋아', '도전적인','밝은', '친화적인', '소통 적극',
+         '꼼꼼한', '열정적인', '협동 좋아', '소통 적극',
     ]
     const skills = [
         {
