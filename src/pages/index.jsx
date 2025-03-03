@@ -163,9 +163,11 @@ const MainPage = () => {
                         rotate: "0deg",
                         ease: "power4.out",
                         scrollTrigger: {
-                            trigger: ".project-list",
+                            trigger: "#work",
                             start: "top 90%",
+                            end: "bottom bottom",
                             scrub: 1,
+                           // markers:true,
                         },
                     }
                 );
@@ -183,7 +185,7 @@ const MainPage = () => {
                         rotate: "0deg",
                         ease: "power4.out",
                         scrollTrigger: {
-                            trigger: ".project-list",
+                            trigger: "#work",
                             start: "top 90%",
                             scrub: false, // 모바일에서는 scrub 제거
                         },
