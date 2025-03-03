@@ -321,8 +321,9 @@ progress::-webkit-progress-value {
     border-radius: 0;
 }
 #about .wrap {
-    margin-top: 12vh;
-    padding: 0 10vw;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
 }
 #about .img-area {
     width: 300px;
@@ -340,15 +341,16 @@ progress::-webkit-progress-value {
     padding: 10px 15px;
     border-radius: 15px;
     display: inline-block;
-    font-size: 1.2rem;
-    line-height: 1.5;
+    font-size: 1rem;
+    line-height: 1.8;
 }
 .balloon::after {
     content: '';
     display: block;
     position: absolute;
     top: -30px;
-    left: 30px;
+    left: 50%;
+    transform: translateX(-50%);
     width: 0;
     height: 0;
     border-top: 10px solid transparent;
@@ -359,6 +361,13 @@ progress::-webkit-progress-value {
 .balloon p {
     position: relative;
     z-index: 0;
+}
+.balloon p + p {
+    margin-top: 30px;
+}
+.balloon p b {
+    color: #000;
+    background: #f9d4ff;
 }
  .keyword{
     border-radius: 5px;

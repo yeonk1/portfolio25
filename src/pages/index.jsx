@@ -341,6 +341,36 @@ const MainPage = () => {
                     </p>
                 </h2>
             </section>
+            <section id="about">
+                <h2>About</h2>
+                <div className="wrap">
+                    <div className="img-area">
+                        <img src={`${import.meta.env.BASE_URL}assets/images/works/profile.png`} alt="Profile"/>
+                    </div>
+                    <div className="keyword-list-wrap">
+                        <div className="balloon">
+                            <p>안녕하세요?<br/>
+                                저는 3년차 UI developer 강지연입니다.<br/>
+                                저를 소개하자면 {keywords.map((keyword, index) => (
+                                    <span className="keyword" key={index}>&#34;{keyword}&#34;</span>))}
+                                이란 키워드로 설명드릴 수 있을 것 같습니다.<br/>
+                                제가 프로젝트에서 경험해본 SKILL은 {skills.map((skill, index) => (
+                                    <span
+                                        className={`keyword skill ${skill.type === 1 ? 'dev' : skill.type === 2 ? 'comm' : 'design'}`}
+                                        key={index}>
+                                            {skill.name}
+                                        </span>
+                                ))}
+                                등이 있습니다.
+                            </p>
+                            <p>다양한 구축 및 유지보수 경험으로 플러그인이나 새 기술들에 대한 거부감이 크지 않아 항상 도전하는 마음으로 프로젝트에 임합니다.<br/>
+                            저는 항상 새로운 기술을 알게되면 눈을 반짝이며 흥미를 갖습니다. <b>제가 일을 하며 가장 희열을 느끼게 되는 순간은 새로운 지식과 배움을 얻는 순간</b>이 아닐까 합니다.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+            </section>
             <section id="work">
                 <h2>Works</h2>
                 <p className="desc">진행했던 프로젝트 목록입니다.</p>
@@ -367,37 +397,6 @@ const MainPage = () => {
                         </li>
                     ))}
                 </ul>
-            </section>
-            <section id="about">
-                <h2>About</h2>
-                <div className="wrap">
-                    <div className="img-area">
-                        <img src={`${import.meta.env.BASE_URL}assets/images/works/profile.png`} alt="Profile"/>
-                    </div>
-                    <div className="keyword-list-wrap">
-                        <div className="balloon">
-                            <p>안녕하세요?<br/>
-                                저는 UI developer 강지연입니다.<br/>
-                                저를 소개하자면
-                                {keywords.map((keyword, index) => (
-                                    <span className="keyword" key={index}>&#34;{keyword}&#34;</span>))}
-                                이란 키워드로 설명드릴 수 있을 것 같습니다.<br/>
-                                제가 프로젝트에서 경험해본 SKILL은
-                                {skills.map((skill, index) => (
-                                    <span
-                                        className={`keyword skill ${skill.type === 1 ? 'dev' : skill.type === 2 ? 'comm' : 'design'}`}
-                                        key={index}>
-                                            {skill.name}
-                                        </span>
-                                ))}
-                                등이 있습니다.
-                            </p>
-
-
-                        </div>
-                    </div>
-                </div>
-
             </section>
             <section id="contact">
                 <h2>Contact</h2>

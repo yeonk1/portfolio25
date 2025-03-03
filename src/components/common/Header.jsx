@@ -7,8 +7,8 @@ const Header = () => {
             <div className="gnb">
                 <ul>
                     <li><a href={'#home'}>HOME</a></li>
-                    <li><a href={'#work'}>WORKS</a></li>
                     <li><a href={'#about'}>ABOUT</a></li>
+                    <li><a href={'#work'}>WORKS</a></li>
                     <li><a href={'#contact'}>CONTACT</a></li>
                 </ul>
             </div>
