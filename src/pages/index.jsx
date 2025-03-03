@@ -117,11 +117,17 @@ const MainPage = () => {
                 duration: 1,
                 ease: "power4.out",
                 scrollTrigger: {
-                    trigger: ".keyword-list-wrap",
-                    start: "top 90%",
+                    trigger: "#about",
+                    start: "top top",
+                    end: "+=500",
+                    pin: true,
+                    scrub: 1,
+                    markers:true,
                 },
             }
         );
+
+
         gsap.fromTo(
             ".keyword",
             {
@@ -143,28 +149,47 @@ const MainPage = () => {
             }
         );
 
-        gsap.fromTo(
-            ".project-card",
-            {
-                filter: "blur(10px)", // 시작 블러
-                opacity: 0,
-                y: 50,
-                rotate: '2deg',
-            },
-            {
-                filter: "blur(0px)", // 종료 블러
-                y: 0,
-                opacity: 1,
-                stagger: 0.1,
-                duration: 1,
-                rotate: '0deg',
-                ease: "power4.out",
-                scrollTrigger: {
-                    trigger: ".project-list",
-                    start: "top 90%",
-                },
-            }
-        );
+        gsap.matchMedia()
+            .add("(min-width: 768px)", () => {
+                return gsap.fromTo(
+                    ".project-card",
+                    { filter: "blur(10px)", opacity: 0, y: 50, rotate: "2deg" },
+                    {
+                        filter: "blur(0px)",
+                        y: 0,
+                        opacity: 1,
+                        stagger: 0.1,
+                        duration: 1,
+                        rotate: "0deg",
+                        ease: "power4.out",
+                        scrollTrigger: {
+                            trigger: ".project-list",
+                            start: "top 90%",
+                            scrub: 1,
+                        },
+                    }
+                );
+            })
+            .add("(max-width: 767px)", () => {
+                return gsap.fromTo(
+                    ".project-card",
+                    { filter: "blur(10px)", opacity: 0, y: 50, rotate: "2deg" },
+                    {
+                        filter: "blur(0px)",
+                        y: 0,
+                        opacity: 1,
+                        stagger: 0.1,
+                        duration: 1,
+                        rotate: "0deg",
+                        ease: "power4.out",
+                        scrollTrigger: {
+                            trigger: ".project-list",
+                            start: "top 90%",
+                            scrub: false, // 모바일에서는 scrub 제거
+                        },
+                    }
+                );
+            });
         const cursor = document.querySelector(".cursor");
         const listShow = document.querySelectorAll('.project-card');
 
