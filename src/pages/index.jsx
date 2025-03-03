@@ -256,6 +256,10 @@ const MainPage = () => {
             type: 1,
         },
         {
+            name: 'GSAP',
+            type: 1,
+        },
+        {
             name: 'HTML',
             type: 1,
         },
