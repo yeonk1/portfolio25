@@ -85,7 +85,22 @@ const MainPage = () => {
             return (direction = 1) => (min + delta * Math.random()) * direction;
         }
 
-
+        gsap.fromTo(
+            ".letter",
+            {
+                filter: "blur(10px)",
+                opacity: 0,
+                y: 50,
+            },
+            {
+                filter: "blur(0px)",
+                y: 0,
+                opacity: 1,
+                stagger: 0.1,
+                duration: 0.8,
+                ease: "power4.out",
+            }
+        );
 
         gsap.fromTo(
             ".balloon",
