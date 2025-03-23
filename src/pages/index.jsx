@@ -274,6 +274,26 @@ const MainPage = () => {
             type: 1,
         },
         {
+            name: 'GIT',
+            type: 1,
+        },
+        {
+            name: 'GITHUB',
+            type: 1,
+        },
+        {
+            name: 'GITLAB',
+            type: 1,
+        },
+        {
+            name: 'IntelliJ',
+            type: 1,
+        },
+        {
+            name: 'VScode',
+            type: 1,
+        },
+        {
             name: 'JIRA',
             type: 2,
         },
