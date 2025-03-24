@@ -254,6 +254,10 @@ const MainPage = () => {
             type: 1,
         },
         {
+            name: 'VUETIFY',
+            type: 1,
+        },
+        {
             name: 'JAVASCRIPT',
             type: 1,
         },
@@ -316,9 +320,19 @@ const MainPage = () => {
     ]
     const projects = [
         {
+            title: "2025 포트폴리오",
+            type: "구축",
+            skill: ["VITE", "REACT", "CSS", "JAVASCRIPT", "GSAP"],
+            contribution: 100,
+            date: "2025.02.17 ~ 2024.03.03",
+            desc: "저의 2025ver 포트폴리오 작업입니다. 배경에 GSAP로 랜덤으로 수치를 부여해 세개의 원형이 크기와 위치가 수시로 바뀌는 역동적인 디자인으로 구현했으며, 최대한 한눈에 보여지기 쉽게 UI를 간략하게 설계했습니다.",
+            link:'https://yeonk1.github.io/portfolio25/',
+            image: 'portfoilo'
+        },
+        {
             title: "Samsung MONIMO",
             type: "어플리케이션 운영 및 신규 파트 구축",
-            skill: ["VUE", "NUXT", "SCSS", "JAVASCRIPT", "LOTTIE"],
+            skill: ["VUE", "NUXT","VUETIFY", "SCSS", "JAVASCRIPT", "LOTTIE"],
             contribution: 100,
             date: "2024.01.01 ~ 2024.07.31",
             desc: "삼성그룹의 통합 금융 어플리케이션으로써, 금융사 특유의 다양한 CASE 구현을 직접 경험할 수 있었습니다. VUE를 사용한 하이브리드 앱이며, 사용자 데이터에 따른 케이스 분리와 다양한 진입 화면, 아토믹 디자인에 따른 컴포넌트 기반 UI 설계 및 코드 모듈화 등 어플리케이션 운영을 관리했습니다. 특히, 신규로 오픈되는 주니어 파트를 맡아 구축을 진행한 바가 있습니다.",
