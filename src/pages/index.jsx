@@ -242,6 +242,14 @@ const MainPage = () => {
     ]
     const skills = [
         {
+            name: 'REACT',
+            type: 1,
+        },
+        {
+            name: 'NEXT',
+            type: 1,
+        },
+        {
             name: 'VUE',
             type: 1,
         },
