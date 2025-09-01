@@ -328,6 +328,16 @@ const MainPage = () => {
     ]
     const projects = [
         {
+            title: "Leanerway",
+            type: "UI개발",
+            skill: ["REACT", "TAILWIND", "JAVASCRIPT"],
+            contribution: 100,
+            date: "2025.04.14 ~ 2024.05.15",
+            desc: "유학/여행 플랫폼으로 React와 Tailwind를 사용하여 어플리케이션 구축을 진행했습니다. 첫번째 어플리케이션 구축건이면서 React와 Tailwind를 실전에서 사용할 수 있어 즐겁게 임했던 것 같습니다.",
+            link:'https://dev.leanerway.co.kr/pc',
+            image: 'learnerway.png'
+        },
+        {
             title: "2025 포트폴리오",
             type: "구축",
             skill: ["VITE", "REACT", "CSS", "JAVASCRIPT", "GSAP"],
@@ -335,17 +345,17 @@ const MainPage = () => {
             date: "2025.02.17 ~ 2024.03.03",
             desc: "저의 2025ver 포트폴리오 작업입니다. 배경에 GSAP로 랜덤으로 수치를 부여해 세개의 원형이 크기와 위치가 수시로 바뀌는 역동적인 디자인으로 구현했으며, 최대한 한눈에 보여지기 쉽게 UI를 간략하게 설계했습니다.",
             link:'https://yeonk1.github.io/portfolio25/',
-            image: 'portfoilo'
+            image: 'portfoilo.jpg'
         },
         {
             title: "Samsung MONIMO",
-            type: "어플리케이션 운영 및 신규 파트 구축",
+            type: "어플리케이션 UI 운영 및 신규 파트 구축",
             skill: ["VUE", "NUXT","VUETIFY", "SCSS", "JAVASCRIPT", "LOTTIE"],
             contribution: 100,
             date: "2024.01.01 ~ 2024.07.31",
             desc: "삼성그룹의 통합 금융 어플리케이션으로써, 금융사 특유의 다양한 CASE 구현을 직접 경험할 수 있었습니다. VUE를 사용한 하이브리드 앱이며, 사용자 데이터에 따른 케이스 분리와 다양한 진입 화면, 아토믹 디자인에 따른 컴포넌트 기반 UI 설계 및 코드 모듈화 등 어플리케이션 운영을 관리했습니다. 특히, 신규로 오픈되는 주니어 파트를 맡아 구축을 진행한 바가 있습니다.",
             link:'https://www.monimo.com/',
-            image: 'monimo-01'
+            image: 'monimo-01.jpg'
         },
         {
             title: "LG KOOROO",
@@ -355,7 +365,7 @@ const MainPage = () => {
             date: "2023.10 ~ 2023.11",
             desc: "LG 전기 스쿠터 배터리 벤처 기업으로 신규 구축 작업을 진행했습니다. VUE, NUXT 기초 셋팅부터 작업하였으며, GSAP로 자연스러운 인터렉션을 구현했습니다. ",
             link:'https://www.kooroo.co.kr',
-            image:'kooroo-01'
+            image:'kooroo-01.jpg'
         },
         {
             title: "동아일보",
@@ -365,7 +375,7 @@ const MainPage = () => {
             date: "2023.09 ~ 2023.10",
             desc: "메인페이지와 각 카테고리별 메인 페이지를 리뉴얼 작업했습니다. 언론사 페이지 특성상 다양한 레이아웃의 디자인으로 진행됐습니다. 추후 유지보수성의 효율을 높이기 위해 레이아웃들을 case별로 구분하여 class를 부여해 작업했습니다.",
             link:'https://www.donga.com',
-            image: 'donga-01'
+            image: 'donga-01.jpg'
         },
         {
             title: "Hanwha Science Challenge",
@@ -375,7 +385,7 @@ const MainPage = () => {
             date: "2022.12 ~ 2023.01",
             desc: "hanwha에서 주최하는 고등학교 과학 공모전 홈페이지로, 전체 리뉴얼 퍼블리싱 진행했습니다. 스크롤 인터랙션 및 반응형 작업에 신경썼던 프로젝트입니다.",
             link:'https://www.sciencechallenge.or.kr',
-            image: 'hanwhasc-01'
+            image: 'hanwhasc-01.jpg'
         },
         {
             title: "Hanwha System",
@@ -385,7 +395,7 @@ const MainPage = () => {
             date: "2022.07",
             desc: "Hanwha System 전체 리뉴얼 프로젝트에서 반응형 작업을 진행했습니다.",
             link:'https://www.hanwhasystems.com',
-            image: 'hanwhasystem-01'
+            image: 'hanwhasystem-01.jpg'
         },
         {
             title: "Hanwha Connect",
@@ -395,7 +405,7 @@ const MainPage = () => {
             date: "2022.07",
             desc: "Hanwha Connect 전체 리뉴얼 프로젝트에서 반응형 작업을 진행했습니다.",
             link:'https://www.hanwhaconnect.co.kr',
-            image: 'hanwhaconnect-01'
+            image: 'hanwhaconnect-01.jpg'
         },
         {
             title: "매일경제",
@@ -405,7 +415,7 @@ const MainPage = () => {
             date: "2022.02",
             desc: "신문사 매일경제의 전체적인 리뉴얼 작업을 맡았으며, 적응형으로 진행하였습니다. 해당 퍼블리싱 작업물은 매일경제 웹 뿐만 아니라 매일경제 하이브리드 어플리케이션에도 동일 적용되었습니다.",
             link:'https://www.mk.co.kr',
-            image: 'mk-01'
+            image: 'mk-01.jpg'
         },
     ];
 
@@ -497,7 +507,7 @@ const MainPage = () => {
             <div className="cursor">
                 {projects.map((object, i) => (
                     <div className="img-area" key={i}>
-                        <img src={`${import.meta.env.BASE_URL}assets/images/works/${object.image}.jpg`} alt=""/>
+                        {object.image &&  <img src={`${import.meta.env.BASE_URL}assets/images/works/${object.image}`} alt=""/> }
                     </div>
                 ))}
                 {/* 리스트 hover 시 커서에 보이는 효과 삽입 */}
