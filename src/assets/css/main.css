@@ -375,27 +375,25 @@ progress::-webkit-progress-value {
     background: #f9d4ff;
 }
  .keyword{
-    border-radius: 5px;
     font-weight: 600;
     position: relative;
     transition: 1s;
+     background: #fff;
+     color: #212121;
+     padding: 4px 8px;
 }
- .keyword + .keyword::before {
-    content: ', ';
-     color: #fff;
-}
- .keyword:last-child::after {
-    display: none;
+.keyword +  .keyword {
+    margin-left: 8px;
 }
 
-.keyword.skill.dev:hover {
-    color: #5d83e4;
+.keyword.skill.dev {
+    background: #5d83e4;
 }
-.keyword.skill.comm:hover {
-    color: #fb9351;
+.keyword.skill.comm {
+    background: #fb9351;
 }
-.keyword.skill.design:hover {
-    color: #9776fa;
+.keyword.skill.design{
+    background: #9776fa;
 }
 
 #contact  {

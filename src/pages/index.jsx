@@ -449,21 +449,21 @@ const MainPage = () => {
                         <div className="balloon">
                             <p>안녕하세요?<br/>
                                 저는 3년차 UI developer 강지연입니다.<br/>
-                                저를 소개하자면 {keywords.map((keyword, index) => (
-                                    <span className="keyword" key={index}>&#34;{keyword}&#34;</span>))}
-                                이란 키워드로 설명드릴 수 있을 것 같습니다.<br/>
-                                제가 프로젝트에서 경험해본 SKILL은 {skills.map((skill, index) => (
-                                    <span
-                                        className={`keyword skill ${skill.type === 1 ? 'dev' : skill.type === 2 ? 'comm' : 'design'}`}
-                                        key={index}>
-                                            {skill.name}
-                                        </span>
-                                ))}
-                                등이 있습니다.
                             </p>
                             <p>저는 문제에 대해 두려움보단 흥미를 느낍니다.
                                 문제 하나하나 해결해 나아가는 과정을 즐기는 마음으로 임하다보니 저에게 어려움은 곧 성취로 다가왔습니다.<br/>
                                 <b>제가 일을 하며 가장 희열을 느끼는 순간은 새로운 지식과 배움을 얻는 순간</b>이라고 말하고 싶네요 :)
+                            </p>
+                            {skills.map((skill, index) => (
+                                <span
+                                    className={`keyword skill ${skill.type === 1 ? 'dev' : skill.type === 2 ? 'comm' : 'design'}`}
+                                    key={index}>
+                                            {skill.name}
+                                        </span>
+                            ))}
+                            <p>
+                                {keywords.map((keyword, index) => (
+                                    <span className="keyword" key={index}>{keyword}</span>))}
                             </p>
                         </div>
                     </div>
