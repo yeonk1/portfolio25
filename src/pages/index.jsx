@@ -328,12 +328,12 @@ const MainPage = () => {
     ]
     const projects = [
         {
-            title: "Leanerway",
+            title: "Leanerway 어플리케이션",
             type: "UI개발",
             skill: ["REACT", "TAILWIND", "JAVASCRIPT"],
             contribution: 100,
             date: "2025.04.14 ~ 2024.05.15",
-            desc: "유학/여행 플랫폼으로 React와 Tailwind를 사용하여 어플리케이션 구축을 진행했습니다. 첫번째 어플리케이션 구축건이면서 React와 Tailwind를 실전에서 사용할 수 있어 즐겁게 임했던 것 같습니다.",
+            desc: "유학/여행 플랫폼 어플리케이션으로 React와 Tailwind를 사용하여 어플리케이션 구축을 진행했습니다. 첫번째 어플리케이션 구축건이면서 React와 Tailwind를 실전에서 사용할 수 있어 즐겁게 임했던 것 같습니다.",
             link:'https://apps.apple.com/us/app/%EB%9F%AC%EB%84%88%EC%9B%A8%EC%9D%B4-learnerway/id6749139237',
             image: 'learnerway.png'
         },
