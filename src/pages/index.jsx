@@ -72,7 +72,7 @@ const MainPage = () => {
         }
         function scaleChange(target, direction) {
             gsap.to(target, {
-              scale: randomScale(direction),
+                scale: randomScale(direction),
                 duration: randomTime(),
                 ease: 'sine.inOut',
                 onComplete: scaleChange,
@@ -146,7 +146,7 @@ const MainPage = () => {
                             start: "top 90%",
                             end: "bottom bottom",
                             scrub: 1,
-                           // markers:true,
+                            // markers:true,
                         },
                     }
                 );
@@ -217,7 +217,7 @@ const MainPage = () => {
     const text = "UI Developer".split('');
 
     const keywords = [
-         '꼼꼼한', '열정적인', '협동 좋아', '소통 적극',
+        '꼼꼼한', '열정적인', '협동 좋아', '소통 적극',
     ]
     const skills = [
         {
@@ -460,8 +460,8 @@ const MainPage = () => {
                                 <b>제가 일을 하며 가장 희열을 느끼는 순간은 새로운 지식과 배움을 얻는 순간</b>이라고 말하고 싶네요 :)
                             </p>
                             <p>프로젝트를 진행하면서 가장 중요시 되어야 하는 부분은 사용성이라고 생각합니다.<br/>
-                            버튼 하나도 흐름이 자연스러운 것, UI가 흐름대로 자연스러운 것이 맞물려야 사용자가 더 오랜 시간 머무를 수 있는 서비스가 된다고 생각합니다.<br/>
-                            디자이너와 기획자와 가장 최적화된 서비스를 구현하기 위해 적극적으로 소통하고, 그들의 의도를 확실하게 서비스에 담는 것이 저의 역할이라고 생각해요</p>
+                                버튼 하나도 흐름이 자연스러운 것, UI가 흐름대로 자연스러운 것이 맞물려야 사용자가 더 오랜 시간 머무를 수 있는 서비스가 된다고 생각합니다.<br/>
+                                디자이너와 기획자와 가장 최적화된 서비스를 구현하기 위해 적극적으로 소통하고, 그들의 의도를 확실하게 서비스에 담는 것이 저의 역할이라고 생각해요</p>
                         </div>
                     </div>
                 </div>
