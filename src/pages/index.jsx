@@ -128,27 +128,6 @@ const MainPage = () => {
         );
 
 
-        gsap.fromTo(
-            ".keyword",
-            {
-                filter: "blur(10px)",
-                opacity: 0,
-                y: 50,
-            },
-            {
-                filter: "blur(0px)",
-                y: 0,
-                opacity: 1,
-                stagger: 0.1,
-                duration: 0.8,
-                ease: "power4.out",
-                scrollTrigger: {
-                    trigger: ".keyword-list-wrap",
-                    start: "top 90%",
-                },
-            }
-        );
-
         gsap.matchMedia()
             .add("(min-width: 768px)", () => {
                 return gsap.fromTo(
@@ -302,6 +281,10 @@ const MainPage = () => {
             type: 2,
         },
         {
+            name: 'BITBUCKET',
+            type: 2,
+        },
+        {
             name: 'Confluence',
             type: 2,
         },
@@ -320,6 +303,25 @@ const MainPage = () => {
     ]
     const projects = [
         {
+            title: "스포츠 트래킹 & 커머스 통합 모바일 앱 ",
+            type: "[12월 출시 예정] 어플리케이션 구축",
+            skill: [ "VUE3", "SCSS", "TYPESCRIPT"],
+            contribution: 100,
+            date: "2025.09 ~ 2025.11",
+            desc: "스포츠 트래킹 & 커머스 통합 모바일 앱 어플리케이션 구축건입니다. 단독 참여 프로젝트이고, 프론트 개발자들과 최대한의 소통으로 MODAL, INPUT, BUTTON 등 모든 디자인 시스템을 기반한 컴포넌트 구축을 진행하였습니다. 쇼핑과 더불어 운동 시스템까지 많은 케이스들을 구현할 수 있었던 프로젝트입니다.",
+            image: 'portfoilo.jpg'
+        },
+        {
+            title: "Learnerway - 유학, 교육 커머스 어플리케이션 구축",
+            type: "어플리케이션 구축",
+            skill: [ "REACT", "TAILWIND", "TYPESCRIPT"],
+            contribution: 100,
+            date: "2025.04.14 ~ 2025.05.03",
+            desc: "유학, 교육 커머스 어플리케이션 구축건입니다. 처음으로 서비스의 앞단부터 끝단까지 모두 단독으로 참여했습니다. 개발과 함께 동시에 작업한 특수한 프로젝트였습니다. 데이터 흐름을 이해하고, 모든 CASE가 대비될 수 있는 레이아웃을 설계했습니다. 특히, 샌드버드 채팅 프레임워크 커스텀까지 작업하여 서비스의 완성도를 높였습니다.",
+            link:'https://apps.apple.com/us/app/러너웨이-learnerway/id6749139237',
+            image: 'learnerway.png'
+        },
+        {
             title: "2025 포트폴리오",
             type: "구축",
             skill: ["VITE", "REACT", "CSS", "JAVASCRIPT", "GSAP"],
@@ -327,7 +329,17 @@ const MainPage = () => {
             date: "2025.02.17 ~ 2024.03.03",
             desc: "저의 2025ver 포트폴리오 작업입니다. 배경에 GSAP로 랜덤으로 수치를 부여해 세개의 원형이 크기와 위치가 수시로 바뀌는 역동적인 디자인으로 구현했으며, 최대한 한눈에 보여지기 쉽게 UI를 간략하게 설계했습니다.",
             link:'https://yeonk1.github.io/portfolio25/',
-            image: 'portfoilo'
+            image: 'portfoilo.jpg'
+        },
+        {
+            title: "LG전자 베스트샵",
+            type: "웹 접근성 개선",
+            skill: ["PHP", "CSS", "JAVASCRIPT"],
+            contribution: 100,
+            date: "2024.11.03 ~ 2024.12.20",
+            desc: "LG전자 베스트샵 웹 접근성 개선 프로젝트입니다. 단기적으로 상주하며 기획, 디자인, UI 모든 케이스들에서 웹접근성 개선 방안을 찾아 접근성 개선될 수 있도록 투입되었습니다. ",
+            link:'https://bestshop.lge.co.kr/',
+            image: 'bestshop.png'
         },
         {
             title: "Samsung MONIMO",
@@ -337,7 +349,7 @@ const MainPage = () => {
             date: "2024.01.01 ~ 2024.07.31",
             desc: "삼성그룹의 통합 금융 어플리케이션으로써, 금융사 특유의 다양한 CASE 구현을 직접 경험할 수 있었습니다. VUE를 사용한 하이브리드 앱이며, 사용자 데이터에 따른 케이스 분리와 다양한 진입 화면, 아토믹 디자인에 따른 컴포넌트 기반 UI 설계 및 코드 모듈화 등 어플리케이션 운영을 관리했습니다. 특히, 신규로 오픈되는 주니어 파트를 맡아 구축을 진행한 바가 있습니다.",
             link:'https://www.monimo.com/',
-            image: 'monimo-01'
+            image: 'monimo-01.jpg'
         },
         {
             title: "LG KOOROO",
@@ -347,7 +359,7 @@ const MainPage = () => {
             date: "2023.10 ~ 2023.11",
             desc: "LG 전기 스쿠터 배터리 벤처 기업으로 신규 구축 작업을 진행했습니다. VUE, NUXT 기초 셋팅부터 작업하였으며, GSAP로 자연스러운 인터렉션을 구현했습니다. ",
             link:'https://www.kooroo.co.kr',
-            image:'kooroo-01'
+            image:'kooroo-01.jpg'
         },
         {
             title: "동아일보",
@@ -357,7 +369,7 @@ const MainPage = () => {
             date: "2023.09 ~ 2023.10",
             desc: "메인페이지와 각 카테고리별 메인 페이지를 리뉴얼 작업했습니다. 언론사 페이지 특성상 다양한 레이아웃의 디자인으로 진행됐습니다. 추후 유지보수성의 효율을 높이기 위해 레이아웃들을 case별로 구분하여 class를 부여해 작업했습니다.",
             link:'https://www.donga.com',
-            image: 'donga-01'
+            image: 'donga-01.jpg'
         },
         {
             title: "Hanwha Science Challenge",
@@ -367,7 +379,7 @@ const MainPage = () => {
             date: "2022.12 ~ 2023.01",
             desc: "hanwha에서 주최하는 고등학교 과학 공모전 홈페이지로, 전체 리뉴얼 퍼블리싱 진행했습니다. 스크롤 인터랙션 및 반응형 작업에 신경썼던 프로젝트입니다.",
             link:'https://www.sciencechallenge.or.kr',
-            image: 'hanwhasc-01'
+            image: 'hanwhasc-01.jpg'
         },
         {
             title: "Hanwha System",
@@ -377,7 +389,7 @@ const MainPage = () => {
             date: "2022.07",
             desc: "Hanwha System 전체 리뉴얼 프로젝트에서 반응형 작업을 진행했습니다.",
             link:'https://www.hanwhasystems.com',
-            image: 'hanwhasystem-01'
+            image: 'hanwhasystem-01.jpg'
         },
         {
             title: "Hanwha Connect",
@@ -387,7 +399,7 @@ const MainPage = () => {
             date: "2022.07",
             desc: "Hanwha Connect 전체 리뉴얼 프로젝트에서 반응형 작업을 진행했습니다.",
             link:'https://www.hanwhaconnect.co.kr',
-            image: 'hanwhaconnect-01'
+            image: 'hanwhaconnect-01.jpg'
         },
         {
             title: "매일경제",
@@ -397,7 +409,7 @@ const MainPage = () => {
             date: "2022.02",
             desc: "신문사 매일경제의 전체적인 리뉴얼 작업을 맡았으며, 적응형으로 진행하였습니다. 해당 퍼블리싱 작업물은 매일경제 웹 뿐만 아니라 매일경제 하이브리드 어플리케이션에도 동일 적용되었습니다.",
             link:'https://www.mk.co.kr',
-            image: 'mk-01'
+            image: 'mk-01.jpg'
         },
     ];
 
@@ -430,7 +442,7 @@ const MainPage = () => {
                     <div className="keyword-list-wrap">
                         <div className="balloon">
                             <p>안녕하세요?<br/>
-                                저는 3년차 UI developer 강지연입니다.<br/>
+                                저는 4년차 UI developer 강지연입니다.<br/>
                                 저를 소개하자면 {keywords.map((keyword, index) => (
                                     <span className="keyword" key={index}>&#34;{keyword}&#34;</span>))}
                                 이란 키워드로 설명드릴 수 있을 것 같습니다.<br/>
@@ -447,6 +459,9 @@ const MainPage = () => {
                                 문제 하나하나 해결해 나아가는 과정을 즐기는 마음으로 임하다보니 저에게 어려움은 곧 성취로 다가왔습니다.<br/>
                                 <b>제가 일을 하며 가장 희열을 느끼는 순간은 새로운 지식과 배움을 얻는 순간</b>이라고 말하고 싶네요 :)
                             </p>
+                            <p>프로젝트를 진행하면서 가장 중요시 되어야 하는 부분은 사용성이라고 생각합니다.<br/>
+                            버튼 하나도 흐름이 자연스러운 것, UI가 흐름대로 자연스러운 것이 맞물려야 사용자가 더 오랜 시간 머무를 수 있는 서비스가 된다고 생각합니다.<br/>
+                            디자이너와 기획자와 가장 최적화된 서비스를 구현하기 위해 적극적으로 소통하고, 그들의 의도를 확실하게 서비스에 담는 것이 저의 역할이라고 생각해요</p>
                         </div>
                     </div>
                 </div>
@@ -458,7 +473,7 @@ const MainPage = () => {
                 <ul className="project-list">
                     {projects.map((project, index) => (
                         <li key={index} className="project-card">
-                            <a href={project.link} target="_blank">
+                            <a href={project.link ? project.link : ''} target="_blank">
                                 <p className="type">{project.type}</p>
                                 <h3 className="title">{project.title}</h3>
                                 <p className="date">{project.date}</p>
@@ -489,7 +504,7 @@ const MainPage = () => {
             <div className="cursor">
                 {projects.map((object, i) => (
                     <div className="img-area" key={i}>
-                        <img src={`${import.meta.env.BASE_URL}assets/images/works/${object.image}.jpg`} alt=""/>
+                        <img src={`${import.meta.env.BASE_URL}assets/images/works/${object.image}`} alt=""/>
                     </div>
                 ))}
                 {/* 리스트 hover 시 커서에 보이는 효과 삽입 */}
