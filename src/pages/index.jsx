@@ -347,7 +347,7 @@ const MainPage = () => {
         },
         {
             title: "Samsung MONIMO",
-            type: "어플리케이션 운영 및 신규 파트 구축",
+            type: "APP 운영 및 신규 파트 구축",
             skill: ["VUE", "NUXT","VUETIFY", "SCSS", "JAVASCRIPT", "LOTTIE"],
             contribution: 100,
             date: "2024.01.01 ~ 2024.07.31",
