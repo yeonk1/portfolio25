@@ -221,6 +221,10 @@ const MainPage = () => {
     ]
     const skills = [
         {
+            name: 'REACT',
+            type: 1,
+        },
+        {
             name: 'VUE',
             type: 1,
         },
@@ -304,7 +308,7 @@ const MainPage = () => {
     const projects = [
         {
             title: "스포츠 트래킹 & 커머스 통합 모바일 앱 ",
-            type: "[12월 출시 예정] 어플리케이션 구축",
+            type: "[12월 출시 예정] UI 구축",
             skill: [ "VUE3", "SCSS", "TYPESCRIPT"],
             contribution: 100,
             date: "2025.09 ~ 2025.11",
@@ -313,7 +317,7 @@ const MainPage = () => {
         },
         {
             title: "Learnerway - 유학, 교육 커머스 어플리케이션 구축",
-            type: "어플리케이션 구축",
+            type: "어플리케이션 UI 구축",
             skill: [ "REACT", "TAILWIND", "TYPESCRIPT"],
             contribution: 100,
             date: "2025.04.14 ~ 2025.05.03",
